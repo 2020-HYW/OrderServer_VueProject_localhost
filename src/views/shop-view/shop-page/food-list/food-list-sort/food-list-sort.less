@@ -1,0 +1,307 @@
+*{margin: 0;padding: 0;}
+.A-box{
+  position: relative;
+  // overflow-y: scroll;
+  // position: fixed;
+  // top: 0;
+  .A-right-p{
+    overflow-x: hidden;
+  
+    .A-food-tab{
+      .A-food-title{
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 0.2rem;
+        padding-left: 0.5rem;
+        color: #7f7f7f;
+        font-weight: bold;
+        // margin-left: 0.1rem;
+        padding-left: 1rem;
+        border-radius: 0.25rem;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .name{}
+        .sort{
+          margin-right: 1.75rem;
+          background-color: #ffffff;
+          padding:0.15rem 0.5rem;
+          border-radius: 0.25rem;
+          border: #cdcdcd solid 0.075rem ;
+        }
+      }
+      .A-tab{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.25rem;
+        // height: 15rem;
+        padding: 0 1rem;
+        border-bottom: 0.05rem solid #f4f4f4;
+        .A-food-pic{
+          flex: 0.3;
+          margin-right: 0.25rem;
+          img{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.5rem;
+          }
+        }
+        .A-text-info{
+          flex: 0.7;
+          margin-right: 0.5rem;
+          // 超出一行文本 以...显示
+          // display:block;
+          
+          overflow:hidden;
+          
+          .A-food-name{
+            overflow:hidden;
+            word-break:keep-all;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            // width: 100%;
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.25rem;
+          }
+          .A-main-material{
+            //超过一行就以...显示
+            overflow:hidden;
+            word-break:keep-all;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            // width: 100%;
+            font-size: 0.6rem;
+            margin-bottom: 0.1rem;
+            letter-spacing: 0.025rem;
+            color: #7f7f7f;
+          }
+          .A-food-month-sale{
+            font-size: 0.6rem;
+            margin-bottom: 0.15rem;
+            letter-spacing: 0.025rem;
+            color: #989898;
+          }
+          .A-price-and-button{
+            display: flex;
+            justify-content: space-between;
+            .A-price{
+              font-size: 0.9rem;
+              font-weight: bolder;
+              letter-spacing: 0.025rem;
+              color: #ff4b34;
+            }
+            .A-buttonI{
+              margin-right: 0.5rem;
+              img{
+                width: 1.25rem;
+              }
+            }
+          }
+      
+        }
+        .delete{
+          display: flex;
+          flex: 0.1;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-size: 0.8rem;
+          // font-weight: bold;
+          background-color: #ff4b34;
+          // 渐变
+          // background-image: linear-gradient(to right,#fc7056,#e60012,#fc7056);
+          color: #fff;
+          height: 80%;
+          border-radius: 0.25rem;
+          .word{
+            margin: 0.1rem 0rem;
+          }
+        }
+        // 编辑按钮
+        .editBtn{
+          display: flex;
+          flex: 0.1;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-size: 0.8rem;
+          // font-weight: bold;
+          background-color: #1296db;
+          margin-left: 0.5rem;
+          // 渐变
+          // background-image: linear-gradient(to right,#fc7056,#e60012,#fc7056);
+          color: #fff;
+          height: 80%;
+          border-radius: 0.25rem;
+          .word2{
+            margin: 0.1rem 0rem;
+          }
+        }
+      }
+      .opacityBox{
+        opacity: 0.5;
+        filter: blur(0.05rem);
+      }
+    }
+    .backBtn{
+      padding: 0.5rem;
+      display: grid;
+      place-items: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #666;
+      .btnName{
+        background-color: #f4f4f4;
+        // letter-spacing: 1rem;
+        // text-align:right;
+        padding: 0.25rem 2.5rem;
+        border: 0.1rem solid #cdcdcd;
+        border-radius: 1rem;
+        .word{
+          text-align: center;
+          margin: 0 0.5rem;
+        }
+
+      }
+    }
+    .A-shopMessage{
+      padding-top: 0.25rem;
+      text-align: center;
+      height: 4rem;
+      color: #989898;
+      font-size: 0.6rem;
+    }
+  }
+  .A-moveBox{
+    position: absolute;
+    // flex-wrap: wrap;
+    opacity: 0.5;
+    .A-box-border{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5.25rem;
+      padding: 0 1rem;
+      border-bottom: 0.05rem solid #f4f4f4;
+
+      .A-food-pic{
+        flex: 0.3;
+        // width: 100%;
+        margin-right: 0.25rem;
+        img{
+          width: 4rem;
+          height: 4rem;
+          border-radius: 0.5rem;
+        }
+      }
+      .A-text-info{
+        flex: 0.7;
+        margin-right: 0.5rem;
+        // 超出一行文本 以...显示
+        // display:block;
+        // width: 100%;
+        overflow:hidden;
+        .A-food-name{
+          overflow:hidden;
+          word-break:keep-all;
+          white-space:nowrap;
+          text-overflow:ellipsis; 
+          // width: 100%;
+          font-size: 0.8rem;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+          margin-bottom: 0.25rem;
+        }
+        .A-main-material{
+          //超过一行就以...显示
+          overflow:hidden;
+          word-break:keep-all;
+          white-space:nowrap;
+          text-overflow:ellipsis;
+          // width: 100%;
+          font-size: 0.6rem;
+          margin-bottom: 0.1rem;
+          letter-spacing: 0.025rem;
+          color: #7f7f7f;
+        }
+        .A-food-month-sale{
+          font-size: 0.6rem;
+          margin-bottom: 0.15rem;
+          letter-spacing: 0.025rem;
+          color: #989898;
+        }
+        .A-price-and-button{
+          display: flex;
+          justify-content: space-between;
+          .A-price{
+            font-size: 0.9rem;
+            font-weight: bolder;
+            letter-spacing: 0.025rem;
+            color: #ff4b34;
+          }
+          .A-buttonI{
+            margin-right: 0.5rem;
+            img{
+              width: 1.25rem;
+            }
+          }
+        }
+    
+      }
+    }
+
+  }
+  .add-food{
+    position: fixed;
+    right: 0rem;
+    background-color: #f4f4f4;
+    bottom: 0;
+    height: 2.8rem;
+    width: 100%;
+    border-top: 0.2rem solid #cdcdcd;
+    .up{
+      // display: flex;
+      display: none;
+      justify-content: center;
+      align-items:flex-end;height: 1rem;
+      img{
+        height: 0.75rem;
+      }
+    }
+    .add{
+      // display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      img{
+        height: 1.25rem;
+      }
+    }
+  }
+}
+
+// 过渡动效
+.deleteBtn-enter-active {
+  // transition: all .3s ease;
+  // transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all .2s cubic-bezier(0.3, 0.5, 0.5, 0.3);
+}
+.deleteBtn-leave-active {
+  transition: all .2s cubic-bezier(0.3, 0.5, 0.5, 0.3);
+  // transition: all .3s ease;
+}
+.deleteBtn-enter {
+  // transform: translateX(0.25rem);
+  opacity: 0;
+}
+.deleteBtn-leave-to{
+  // transform: translateX(0.25rem);
+  opacity: 0;
+}
+
+

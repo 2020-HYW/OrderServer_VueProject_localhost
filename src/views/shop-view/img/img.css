@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2365212_7uads243wv6.eot?t=1612409543029'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2365212_7uads243wv6.eot?t=1612409543029#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPIAAsAAAAACFwAAAN8AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqEEINQATYCJAMQCwoABCAFhG0HTxtJBxFVnC3IfiTYtpHTHf2MKuoknQkesK73BaPML0RnW89WwA32DT4JDRBAMHdr045tESbCMCW2y0/PyD/Pyl8IdPg6XaUqZIXswTHjRdpss7y1zSWjdZRAo/jW14ok+wfBVwmvS+fnBNwOARgyUxBRs3bDlvho1P0EIAb269MNP2JFF5AEvsHNOFUjFuLgyznyOrDA+XvxgeLCB4mjUO/UtHetnlR9zZtyyv63OqoYse7cgHgWKKAgoEH0zfR2R3nZgijMp1xTGvA1soTXSxLelPv/n+RL0frkA9n4nydc1PoEAEoip+A1hgASXie4URyQDPIDuJUGwAcCYC9wD9WYsZs2B5E4adaMCXh69nGJlZF2V5gsvkcoMzzJijWp0y/fbhJHW1OmXbpq0HJvJUtTttz0oNalRzmsL5hgot2p1z+M7mdcutOY6DiuPREmiZ8SXuxkQhhfZpdmZJbHVnRKgCVMlOhpExATL0cmuco4e7xk4uho+mh1ehE+etTm5kNBXA8etLL3Gx4RYksfLPDQttqdfHby/MYn7G516tXug4fKT21QKdHIRJUaTC1/6EuZjol+uNtTDf3r1K3btCkbynE2pVQLDiVpVuho9RLt9fajhZolOZShZgZIt5tK17QOjiU/Hlhlx5Mfm720VSh8LGhl4G1wag+kiDQ4iQWSx1JhYVI18/CNdGOPiK1eaml6r18zIXvNysNqy+HLlw8zVZJEUNWOqlpmXGvDmqC3TJ2GoQD8n6JRMYeiliubP6dOqJrPejfkBfW1S5KKX/1wZ8eeV4tfJEUz2QOTVZY9WVnFLv1VqDat30pD+ruXpiEOABIwGOB5FiE5L7vwp4LALfAlGUDikQkUPjkRGlMQHIdQSXD5qoBRwPHsUApsSiwA8nszEJL6gJTYKVCS+iI05geO1P7gStoUjNY5lwzlzmy2jIlgDukTTEat0h2ycRtPqPs64bDCod6QO5OA0AvihSO2yF0c0Q06ElGgmBo4sLthXRNYphIz8QoRG/u+yvohL6NmtFEDQwmBciD1BIwMaSlrtNgkfv8Eab1aggs6foRvEOuY5YOQJ6iAOGrbSh2n8pbOQIsIoQCFkQY4MDeqtSwBNnunEsoIT9EgbcV86qeqar3h9c0ZngUY6iN0UiihhYP3Imm17efEObKjjZ2wfRXU6odpXdcyGgE=') format('woff2'),
+  url('//at.alicdn.com/t/font_2365212_7uads243wv6.woff?t=1612409543029') format('woff'),
+  url('//at.alicdn.com/t/font_2365212_7uads243wv6.ttf?t=1612409543029') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2365212_7uads243wv6.svg?t=1612409543029#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 60px;
+  color: #01b6ff;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shangpu:before {
+  content: "\e739";
+}
+
+.icon-order:before {
+  content: "\e600";
+}
+
+.icon-gerenzhongxin-zhong:before {
+  content: "\e60c";
+}

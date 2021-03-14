@@ -1,0 +1,152 @@
+.G-box{
+  padding: 1rem;
+  
+  .G-main-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: aqua;
+    padding-bottom: 0.75rem;
+    border-bottom: 0.05rem solid #888;
+    .G-left{
+      .G-name{
+        color: #555;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        letter-spacing: 0.15rem;
+        // margin-left: 0.5rem;
+        padding: 0.35rem 0;
+        border-bottom: 0.05rem solid #888;
+
+      }
+      .G-motto{
+        font-size: 0.7rem;
+        color: #666;
+        padding: 0.15rem 0 ;
+        display: flex;
+        align-items: center;
+        div{
+          display: grid;
+          place-items: center;
+          margin-left: 0.5rem;
+          img{
+            width: 1rem;
+            // height: 0.75rem;
+          }
+          .text{
+            font-size: 0.4rem;
+            line-height: 0rem;
+          }
+
+        }
+
+      }
+    }
+    .G-shop-pic{
+      border: 0.05rem solid #e4e4e4;
+      // padding: 0.5rem;
+      border-radius: 1rem;
+      box-shadow: 0.1rem 0.1rem 0.1rem #cdcdcd;
+      width: 5rem;
+      height: 4rem;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      img{
+        width: 100%;
+        // height: 100%;
+      }
+    }
+  }
+  .G-address{
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    // font-weight: bold;
+    border-bottom: 0.05rem solid #888;
+    .G-text{
+      padding: 0.15rem 0;
+    }
+
+  }
+  
+  .G-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: #555;
+    .G-detail-btn{
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      img{
+        width: 0.75rem;
+        margin-left: 0.25rem;
+      }
+    }
+    .G-edit-btn{
+      display: grid;
+      place-items: center;
+      img{
+        width: 1.5rem;
+      }
+      div{
+        font-size: 0.65rem;
+        text-align: center;
+      }
+    }
+  }
+  .G-detail-Message-box{
+    background-color: #f4f4f4;
+    padding: 0.5rem 0.25rem;
+    font-size: 0.7rem;
+    color: #666;
+    letter-spacing: 0.05rem;
+    .G-message{
+      background-color: #fff;
+      padding: 0.15rem;
+      border: 0.05rem solid #ededed;
+      
+    }
+    .G-message-E{
+      background-color: #fff;
+      padding: 0.15rem;
+      border: 0.05rem solid #ededed;
+      display: flex;
+      align-items: center;
+      
+      img{
+        width: 5rem;
+        border-radius: 0.5rem;
+        border: solid 0.05rem #cdcdcd;
+      }
+    }
+
+  }
+  .quit{
+    display: grid;
+    place-items: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #666;
+    .btn{
+      background-color: #f4f4f4;
+      padding: 0.5rem 1.5rem;
+      border-radius: 1rem;
+      letter-spacing: 0.1rem;
+      border: 0.05rem solid #cdcdcd;
+      margin-top: 10rem;
+    }
+  }
+}
+.Ffade-enter-active, .Ffade-leave-active {
+  transition: opacity .5s;
+}
+.Ffade-enter, .Ffade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

@@ -1,0 +1,139 @@
+*{margin: 0;padding: 0;}
+
+.shop{
+  margin: 0 auto;
+  // height: 10rem;
+  // background-color: lightblue;
+  .shop-head{
+      position: relative;
+      // margin: 0 auto;
+      display: grid;
+      place-items: center;
+      .bg-pic{
+        width: 100%; 
+        // position: relative;
+        height: 7.5rem;
+        overflow: hidden;
+        filter: blur(0.35rem);
+        img{ 
+            width: 100%;
+          }
+        }
+      .shop-info{
+        color: #333;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 1rem;
+        // bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        width: 88%;
+        padding: 0.5rem 0.6rem;
+        box-shadow: 0.1rem 0.1rem 0.25rem #888;
+        .top-path{
+          display: flex;
+          justify-content: space-between;
+          .left-path{
+            flex:.8;
+            .shop-name{
+              font-size: 1.25rem;
+              font-weight: bolder;
+            }
+            .shop-tip{
+              color: #555;
+              font-size: 0.6rem;
+              margin: 0.4rem 0;
+              .meal-time{
+                margin-right: 0.25rem;
+              }
+              .month-sale{
+                margin-left: 0.25rem;
+              }
+            }
+          }
+          .right-path{
+            flex: .2;
+            overflow: hidden;
+            position: relative;
+            width: 4.5rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            img{
+              width: 4.5rem;
+              height: 4.5rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
+          }
+        }
+        .bottom-path{
+          .shop-notice{
+            color: #555;
+            font-size: 0.6rem;
+          }
+        }
+      }    
+    }
+  .blockDiv{
+    height: 1rem;
+    // background-color: #f8f8f8;
+  }
+  .navigation-tabs{
+    // font-size: 0.8rem;
+    display: flex;
+    height: 1.5rem;
+    width: 100%;
+    // padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    // margin: 0.5rem 0.75rem;
+    // margin-top: 0.5rem;
+    background-color: #fff;
+    color: #999;
+    div{
+      font-size: 0.9rem;
+      font-weight:bold;
+      line-height: 1.5rem;
+      text-align: center;
+      width: 2rem;
+      margin: 0 0.25rem;
+      margin-right: 0.5rem;
+      // background-color: lightcoral;
+      &.router-link-exact-active{
+        border-bottom: 0.1rem solid #1296db;
+        color: #1296db;
+      }
+    }
+    
+  }
+  .fixedTop{
+    // position: relative;
+    position: absolute;
+    // position: fixed;
+    top: 0rem;
+    display: flex;
+    height: 1.5rem;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #999;
+    div{
+      font-size: 0.9rem;
+      font-weight:bold;
+      line-height: 1.5rem;
+      text-align: center;
+      width: 2rem;
+      margin: 0 0.25rem;
+      margin-right: 0.5rem;
+      // background-color: lightcoral;
+      &.router-link-exact-active{
+        border-bottom: 0.1rem solid #1296db;
+        color: #1296db;
+      }
+    }
+  }
+}

@@ -1,0 +1,327 @@
+*{margin: 0;padding: 0;}
+.P-U-box{
+  // filter: blur(0rem);
+  position: relative;
+  .P-U-main{
+    display:flex;
+    .P-left-p{
+      // filter: blur(0rem);
+      flex: 0.25;
+      color: #7f7f7f;
+      font-weight: bold;
+      font-size: 0.8rem;
+      text-align: center;
+      // margin-bottom:2.75rem;
+      .P-inner{
+        overflow-y: scroll;
+        .P-food-tab{
+          border-bottom: 0.05rem solid #fff;
+          background: #f4f4f4;
+          padding: 0.75rem 0;
+        }
+      }
+      .P-blockPlace{
+        height: 2.5rem;
+      }
+      
+    }
+    .P-right-p{
+      
+      flex: 0.75;
+      scroll-behavior:smooth;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      // margin-bottom:2.75rem;
+      .P-food-tab{
+        // filter: blur(0rem);
+        .P-food-title{
+          width: 100%;
+          background-color: #f4f4f4;
+          padding: 0.2rem;
+          padding-left: 0.5rem;
+          color: #7f7f7f;
+          font-weight: bold;
+          margin-left: 0.25rem;
+          border-radius: 0.25rem;
+          font-size: 0.8rem;
+        }
+        .P-tab{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 5.25rem;
+          margin: 0 0.3rem;
+          // padding-bottom: 0.5rem;
+          border-bottom: 0.05rem solid #f4f4f4;
+          .P-food-pic{
+            flex: 0.3;
+            margin-right: 0.25rem;
+            img{
+              width: 4rem;
+              height: 4rem;
+              border-radius: 0.5rem;
+            }
+          }
+          .P-text-info{
+            flex: 0.7;
+            margin-right: 0.5rem;
+            // 超出一行文本 以...显示
+            // display:block;
+            
+            overflow:hidden;
+            
+            .P-food-name{
+              overflow:hidden;
+              word-break:keep-all;
+              white-space:nowrap;
+              text-overflow:ellipsis;
+              width: 100%;
+              font-size: 0.8rem;
+              font-weight: bold;
+              letter-spacing: 0.1rem;
+              margin-bottom: 0.25rem;
+            }
+            .P-main-material{
+              //超过一行就以...显示
+              overflow:hidden;
+              word-break:keep-all;
+              white-space:nowrap;
+              text-overflow:ellipsis;
+              width: 100%;
+              font-size: 0.6rem;
+              margin-bottom: 0.1rem;
+              letter-spacing: 0.025rem;
+              color: #7f7f7f;
+            }
+            .P-food-month-sale{
+              font-size: 0.6rem;
+              margin-bottom: 0.15rem;
+              letter-spacing: 0.025rem;
+              color: #989898;
+            }
+            .P-price-and-button{
+              display: flex;
+              justify-content: space-between;
+              .P-price{
+                font-size: 0.9rem;
+                font-weight: bolder;
+                letter-spacing: 0.025rem;
+                color: #ff4b34;
+              }
+              .P-buttonI{
+                margin-right: 0.75rem;
+                display: flex;
+                align-items: center;
+                .reduce{
+                  width: 1.1rem;
+                  height: 1.1rem;
+                }
+                .num{
+                  font-size: 0.8rem;
+                  margin: 0 0.25rem;
+                  color: #666;
+                  font-weight: bold;
+                }
+                .add{
+                  width: 1.25rem;
+                  height: 1.25rem;
+                }
+              }
+            }
+        
+          }
+        }
+      }
+      .P-shopMessage{
+        padding-top: 0.25rem;
+        text-align: center;
+        height: 4rem;
+        color: #989898;
+        font-size: 0.6rem;
+      }
+    }
+  }
+  .P-shopping-car-list{
+    position: fixed;
+    bottom: 2.75rem;
+    background-color:rgba(254, 254, 254, 0.95);
+    // background-color: #fff;
+    box-shadow: 0.05rem 0.05rem 0.05rem #cdcdcd;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.125rem;
+    border: 0.05rem solid #dcdcdc;
+    .SC-top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.6rem;
+      padding: 0.1rem 1.5rem;
+      color: #666;
+      // border-bottom: 0.05rem solid #cdcdcd;
+      .SC-cost{
+        letter-spacing: 0.05rem;
+      }
+      .SC-clear-list{
+        display: flex;
+        align-items: center; 
+        padding: 0.1rem 0rem;
+        img{
+          width: 0.75rem;
+          height: 0.75rem;
+        }
+        .text{
+          font-size: 0.55rem;
+          margin-left: 0.25rem;
+        }
+      }
+    }
+    .SC-list{
+      display: flex;
+      border-top: 0.05rem solid #cdcdcd ;
+      height: 2.5rem;
+      padding: 0.1rem 1.5rem;
+      .SC-pic{
+        // flex: 0.3;
+        display: grid;
+        place-items: center;
+        img{
+          width: 2rem;
+          height: 2rem;
+          // background-color: red;
+        }
+      }
+      .SC-info{
+        flex: 1;
+        display: grid;
+        // flex-wrap: wrap;
+        align-items: center;
+        margin: 0rem 0.5rem;
+        .SC-name{
+          font-size: 0.8rem;
+          font-weight: bold;
+          color: #333;
+          letter-spacing: 0.1rem;
+          margin-top: 0.15rem;
+          // filter: blur(0rem);
+        }
+        .SC-price{
+          font-size: 0.7rem;
+          font-weight: bold;
+          color: #ff4b34;
+        }
+      }
+      .SC-btns{
+        flex: 0.3;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        // padding-right: 0.5rem;
+        .reduce{
+          width: 0.85rem;
+          height: 0.85rem;
+        }
+        .SC-num{
+          margin: 0rem 0.5rem;
+          font-size: 0.8rem;
+          font-weight: bold;
+          color: #666;
+        }
+        .add{
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
+
+  .P-bottom-shopping-car{
+    opacity: .6;
+    position: fixed;
+    bottom: 0.5rem;
+    width: 75%;
+    height: 2.25rem;
+    background-color: #efefef;
+    left: 50%;
+    transform: translateX( -50%);
+    border-radius: 1.125rem;
+    display: flex;
+    align-items: center;
+    .shop-car{
+      flex: 0.3;
+      display: grid;
+      justify-items: center;
+      .car-circle{
+        width: 2.75rem;
+        height: 2.75rem;
+        border: 0.15rem solid #ccc;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        position: relative;
+        img{
+          width: 2rem;
+        }
+        .good-num{
+          position:absolute;
+          right: 0.25rem;
+          top: 0.1rem;
+          background-color: red;
+          color: #fff;
+          width: 1rem;
+          height: 1rem;
+          text-align: center;
+          line-height: 1rem;
+          border-radius: 50%;
+          font-size: 0.8rem;
+        }
+      }
+      .active-circle{
+        border: 0.15rem solid #1296db;
+      }
+    }
+    .all-page{
+      flex: 0.4;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.5rem;
+      display: grid;
+      align-items: center;
+      .price{
+        font-size: 0.9rem;
+        color: #333;
+      }
+      .tip{
+        font-size: 0.6rem;
+        color: #666;
+      }
+    }
+    .to-pay{
+      flex:0.3;
+      font-size: 0.9rem;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      color: #fff;
+      background-color: #ccc;
+      border-radius: 1.125rem;
+      height: 100%;
+      line-height: 2.25rem;
+      // overflow: hidden;
+    }
+    .toPayActive{
+      background-color: #1296db;
+    }
+  }
+  .P-bottom-shopCar{
+    opacity: 0.95;
+    // background-color: #dcdcdc;
+  }
+}
+.fade2-enter-active, .fade2-leave-active {
+  transition: opacity .3s;
+}
+.fade2-enter, .fade2-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

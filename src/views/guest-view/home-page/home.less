@@ -1,0 +1,75 @@
+*{padding: 0;margin: 0;}
+.U-food-list{
+  .U-top{
+    border-bottom:0.05rem solid #dcdcdc;
+    padding: 0.25rem 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: #666;
+  }
+  .U-list{
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    border-bottom: solid 0.05rem #dcdcdc;
+    .U-left{
+      flex: 0.3;
+      .pic{
+        width: 5rem;
+        height: 5rem;
+        display: grid;
+        place-items: center;
+        border-radius: 0.5rem;
+        img{
+          width: 90%;
+          height: 90%;
+          border-radius: 0.5rem;
+          box-shadow: 0.075rem 0.075rem 0.1rem #cdcdcd;
+        }
+      }
+    }
+    .U-right{
+      flex: 0.7;
+      display: grid;
+      align-items: center;
+      padding: 0rem 0.5rem;
+      // border: solid 0.05rem red;
+      .U-name{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #444;
+        letter-spacing: 0.15rem;
+        margin: 0.25rem 0rem;
+      }
+      .U-order-info{
+        font-size: 0.7rem;
+        font-weight: bold;
+        letter-spacing: 0.025rem;
+        .U-type{
+          color: #a40000;
+        }
+        .U-dot{
+          margin: 0rem 0.25rem;
+          color: #888;
+        }
+        .U-meal-time{
+          color: #b7aa00;
+          font-weight: normal;
+          font-size: 0.65rem;
+        }
+      }
+      .U-notices{
+        font-size: 0.6rem;
+        color: #888;
+        margin: 0.25rem 0rem;
+      }
+    }
+  }
+  .U-buttom{
+    color: #cdcdcd;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+}

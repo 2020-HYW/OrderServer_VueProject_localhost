@@ -1,0 +1,79 @@
+.D-box{
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(#fff,#f4f4f4,#fff);
+  .D-main{
+    // background-color: #f4f4f4;
+    color: #777;
+    font-size: 1rem;
+    font-weight: bold;
+    // margin: 2rem;
+    padding: 1.5rem 0;
+
+    .D-message{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      .D-name{
+        margin-right: 0.65rem;
+      }
+      .D-word{
+        height: 1.5rem;
+        width: 7.5rem;
+        background-color: #e4e4e4;
+        border: 0.1rem solid #cdcdcd;
+        border-radius: 0.5rem;
+        color: #777;
+        font-size: 0.85rem;
+        font-weight: bold;
+        letter-spacing: 0.05rem;
+
+      }
+      
+      
+    }
+    .D-warn{
+      // display: none;
+      display: flex;
+      justify-content: center;
+      font-size: 0.7rem;
+      color: #e60012;
+      letter-spacing: 0.1rem;
+      font-weight: normal;
+      .pic{
+        display: grid;
+        place-items: center;
+        margin-right: 0.25rem;
+        img{
+          height: 0.9rem;
+        }
+      }
+
+    }
+    .D-confirm{
+      
+      letter-spacing: 0.25rem;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      .D-Cname{
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: #dcdcdc;
+        text-align: center;
+        border: 0.1rem solid #cdcdcd;
+        padding: 0.2rem 0;
+  
+      }
+      
+  
+    }
+  }
+}
+.Dwarn-enter-active, .Dwarn-leave-active {
+  transition: opacity .5s;
+}
+.Dwarn-enter, .Dwarn-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
