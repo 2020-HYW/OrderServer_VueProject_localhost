@@ -1,0 +1,2 @@
+# OrderServer_VueProject_localhost
+这是一个vue应用的点餐服务网 使用的是localhost代理
