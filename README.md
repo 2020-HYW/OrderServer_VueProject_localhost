@@ -1,2 +1,19 @@
-# OrderServer_VueProject_localhost
-这是一个vue应用的点餐服务网 使用的是localhost代理
+# client-order-service
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
